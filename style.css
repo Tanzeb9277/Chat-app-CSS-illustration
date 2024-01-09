@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root {
+    --pale-violet: #d89eff;
+    --moderate-violet: #9241c8;
+    --desaturated-dark-violet: #6e5d7e;
+    --grayish-blue: #c6cacd;
+    --very-dark-desaturated-violet: #3e2753;
+    --dark-grayish-violet: #a39daa;
+    --light-magenta: #e942ff;
+    --light-violet: #8838ff;
+    --light-grayish-violet: #f5f3f7;
+    --very-light-magenta: #e570ff;
+    
+  }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Rubik', sans-serif;
+    background-color: #fbfbfb;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.background-gradient-one {
+    background-image: linear-gradient(45deg, #8838ff, #e942ff);
+    width: 504px;
+    height: 90vh;
+    border-radius: 0px 0px 1000px 1000px;
+    position: absolute;
+    top: 0;
+    left: -91px;
+    z-index: -1;
+}
+
+.background-gradient-two {
+    background: #f5f3f7;
+    width: 387px;
+    height: 90vh;
+    border-radius: 1000px 0 0 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+}
+
+.phone {
+    position: absolute;
+    z-index: 1;
+    background: white;
+    width: 290px;
+    height: 565px;
+    top: 22vh;
+    left: 24vw;
+    box-shadow: 7px 3px 18px 1px #b9b9b9;
+    border-radius: 30px;
+}
+
+.notch {
+    position: absolute;
+    width: 50%;
+    height: 6%;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    left: 70px;
+}
+
+.screen {
+    width: 91%;
+    height: 95.4%;
+    background: #f5f7f9;
+    margin: 4.5% auto;
+    border-radius: 30px;
+}
+
+.chat-header {
+    background-image: linear-gradient(90deg, #8838ff, #e942ff );
+    width: 100%;
+    height: 62px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    border-radius: 22px 22px 5px 5px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.avatar {
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    border: 1px solid white;
+    margin-right: 10px;
+}
+
+.avatar img {
+    width: 100%;
+    border-radius: 100px;
+}
+
+.info {
+    color: white;
+}
+
+.info h1 {
+    font-size: 14px;
+}
+
+.info p {
+    font-size: 10px;
+    opacity: .5;
+}
+
+.messeges {
+    font-size: 11px;
+    max-width: 60%;
+    background: #dfdfdf;
+    margin: 10px;
+    padding: 6px;
+    border-radius: 10px 10px 10px 5px;
+    line-height: 16px;
+    color: #9241c8;
+    width: fit-content;
+}
+
+
+.client-msg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.client-msg .messeges {
+    border-radius: 10px 10px 5px 10px;
+    background: white;
+    box-shadow: 0px 2px 6px #8080804a;
+    margin: 6px 10px;
+    color: black;
+}
+
+.img-msgs {
+    display: flex;
+    position: relative;
+}
+.img-msgs img {
+    width: 50px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+
+.booking-msg {
+    display: flex;
+    border-radius: 10px 10px 10px 5px;
+    background-image: linear-gradient(45deg, #e942ff, #8838ff);
+    padding: 10px;
+    width: 65%;
+    color: white;
+    margin: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input {
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    border-radius: 100px;
+}
+
+.duration {
+    font-size: 12px;
+}
+
+.msg-input {
+    background: white;
+    width: 84%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-radius: 19px;
+}
+
+.msg-input input[type="text"] {
+    border: none;
+}
+
+.send-btn {
+    height: 16px;
+    width: 16px;
+    background-color: #6e5d7e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 5px;
+    border-radius: 32px;
+}
+
+.about {
+    position: absolute;
+    width: 442px;
+    top: 39vh;
+    left: 51vw;
+}
+
+.about h1 {
+    font-size: 40px;
+    margin: 21px 0;
+    font-weight: 500;
+    color: #3e2753;
+}
+
+.about p {
+    line-height: 29px;
+    color: gray;
+}
+
+@media  (max-width: 1238px) {
+    .phone {
+        position: absolute;
+        z-index: 1;
+        background: white;
+        width: 290px;
+        height: 565px;
+        top: 22vh;
+        left: 6vw;
+        box-shadow: 7px 3px 18px 1px #737373;
+        border-radius: 30px;
+    }
+}
+@media screen and (max-width: 904px) {
+    .phone {
+        position: absolute;
+        z-index: 1;
+        background: white;
+        width: 290px;
+        height: 565px;
+        top: 2vh;
+        left: calc(50vw - 145px);
+        box-shadow: 7px 3px 18px 1px #737373;
+        border-radius: 30px;
+    }
+
+    .about {
+        position: absolute;
+        width: 80vw;
+        top: 69vh;
+        left: calc(50vw - 40vw);
+        text-align: center;
+    }
+
+    .about p {
+        line-height: 29px;
+        color: black;
+    }
+
+    .background-gradient-one {
+        background-image: linear-gradient(45deg, #8838ff, #e942ff);
+        width: 317px;
+        height: 47vh;
+        border-radius: 0px 0px 1000px 1000px;
+        position: absolute;
+        top: 0;
+        left: -91px;
+        z-index: -1;
+    }
+
+
+    .background-gradient-two {
+        background: #f5f3f7;
+        width: 197px;
+        height: 26vh;
+        border-radius: 1000px 0 0 0;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: -2;
+    }
+}
